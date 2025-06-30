@@ -23,6 +23,10 @@ public class Aritmeticos {
         // Operadores lógicos
         boolean x = true;
         boolean y = false;
+        float myFloatNum = 5.99f;
+
+        System.out.println(myFloatNum);
+
         System.out.println("\n=== Operadores Lógicos ===");
         System.out.println("x && y = " + (x && y)); // AND lógico
         System.out.println("x || y = " + (x || y)); // OR lógico

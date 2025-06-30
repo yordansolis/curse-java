@@ -1,4 +1,4 @@
-public class Ejercicios {
+public class BasicoEjercicio01 {
 
     public static final double IVA = 0.19;
 
