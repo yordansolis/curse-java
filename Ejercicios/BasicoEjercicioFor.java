@@ -34,5 +34,62 @@ public class BasicoEjercicioFor {
             System.out.println(i); // 5, 4, 3, 2, 1
         }
 
+        System.out.println("--------- x ----------");
+
+        // Outer loop
+        for (int i = 1; i <= 2; i++) { // Se repite 2 veces: i=1, luego i=2
+            System.out.println("1. for: " + i); // Imprime esto una vez por cada i
+            for (int j = 1; j <= 3; j++) { // Por cada i, j va de 1 a 3
+                System.out.println(" 2. for: " + j); // Esto se imprime 3 veces por cada i
+            }
+        }
+
+        //
+
+        /*
+         * 🔁 Primera vuelta: i = 1
+         * j = 1 → imprime 1 * 1 = 1
+         * j = 2 → imprime 1 * 2 = 2
+         * j = 3 → imprime 1 * 3 = 3
+         * 
+         * 👉 Resultado impreso: 1 2 3 (luego hace salto de línea)
+         * 
+         * 🔁 Segunda vuelta: i = 2
+         * j = 1 → imprime 2 * 1 = 2
+         * j = 2 → imprime 2 * 2 = 4
+         * j = 3 → imprime 2 * 3 = 6
+         * 
+         * 👉 Resultado impreso: 2 4 6 (salto de línea)
+         * 
+         * 🔁 Tercera vuelta: i = 3
+         * j = 1 → imprime 3 * 1 = 3
+         * j = 2 → imprime 3 * 2 = 6
+         * j = 3 → imprime 3 * 3 = 9
+         * 
+         * 👉 Resultado impreso: 3 6 9 (salto de línea)
+         */
+        int contador = 0;
+        System.out.println("--------- x ----------");
+        for (int i = 1; i <= 3; i++) {// i va desde 1 hasta 3 ejemplo: 1, 2, 3
+            for (int j = 1; j <= 3; j++) { // j va desde 1 hasta 3 ejemplo: 1, 2, 3
+                contador++;
+                System.out.print(i * j + " "); // i * j = 1, 2, 3, 2, 4, 6, 3, 6, 9
+            }
+            System.out.println();
+            System.out.println("CONTADOR DE INTERVALOS: " + contador); // 9
+        }
+
+        String[] frutas = { "Manzana", "Pera", "Platano", "Sandia" };
+        for (String i : frutas) {
+            System.out.println(i);
+        }
+
+        // Imprimir la tabla del 2 al 10
+        int number = 2;
+
+        // Print the multiplication table for the number 2
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(number + " x " + i + " = " + (number * i));
+        }
     }
 }
